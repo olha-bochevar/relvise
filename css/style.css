@@ -207,7 +207,8 @@ h6 {
 .page__services {}
 
 .page__advantages {}
-
+.page__practice {
+}
 
 /*------------------------------------------------------------------------------*/
 /*------------------------------------MAIN-BLOCK------------------------------------*/
@@ -325,11 +326,11 @@ h6 {
 }
 
 /*------------------------------------------------------------------------------*/
-/*------------------------------------Section Services------------------------------------*/
+/*------------------------------------SERVICES----------------------------------*/
 
 .servives {
     position: relative;
-    margin: -111px 0 0 0;
+    margin: -111px 0 30px 0;
     z-index: 2;
 
 }
@@ -406,7 +407,7 @@ h6 {
 }
 
 /*------------------------------------------------------------------------------*/
-/*---------------------------------TITLE------------------------------------*/
+/*-----------------------------------TITLE--------------------------------------*/
 
 .title {
     max-width: 864px;
@@ -427,58 +428,37 @@ h6 {
     line-height: calc(20/14*100%);
     letter-spacing: 0.2px;
     color: #737373;
-    padding: 0 176.5px;
 }
 
-@media (max-width:992px) {
+@media (min-width:992px) {
     .title h2 {
         font-size: 34px;
     }
-
-    .title .title__text {
-        padding: 0 135px;
-    }
 }
 
-@media (max-width: 670px) {
+@media (min-width: 671px) and (max-width: 991px) {
     .title h2 {
         font-size: 30px;
     }
-
-    .title .title__text {
-        padding: 0 100px;
-    }
 }
-
-@media (max-width: 479px) {
-
-    .title .title__text {
-        padding: 0 55px;
-    }
-}
-
-@media (min-width: 320px) {
+@media (min-width: 320px)and (max-width: 670px) {
     .title h2 {
         font-size: 28px;
-    }
-
-    .title .title__text {
-        padding: 0 15px;
     }
 }
 
 /*------------------------------------------------------------------------------*/
-/*---------------------------------ADVANTAGES------------------------------------*/
+/*---------------------------------ADVANTAGES-----------------------------------*/
 
 
 .advantages {
-    padding: 120px 0;
+    padding: 100px 0;
     background-color: #fafafa;
 }
 
 @media (max-width:992px) {
     .advantages {
-        padding: 80px 0;
+        padding: 70px 0;
     }
 }
 
@@ -493,7 +473,25 @@ h6 {
     text-align: center;
     margin-bottom: 50px;
 }
+@media (min-width:992px) {
+   .advantages__title .title__text {
+        padding: 0 175px;
+    }
+}
 
+@media (min-width: 671px) and (max-width: 991px) {
+    .advantages__title .title__text {
+        padding: 0 70px;
+    }
+}
+
+
+@media (min-width: 320px)and (max-width: 670px) {
+  
+    .advantages__title .title__text {
+        padding: 0 15px;
+    }
+}
 .advantages__body {
     display: flex;
     margin: 0 -15px;
@@ -531,13 +529,6 @@ h6 {
     padding: 0 15px 0 15px;
 }
 
-
-
-
-
-
-.advantages__items {}
-
 .item-advantage {
     height: 100%;
     background-color: #fff;
@@ -559,5 +550,89 @@ h6 {
     margin: 0;
 }
 
+/*------------------------------------------------------------------------------*/
+/*------------------------------------PRACTICE----------------------------------*/
+
+
+.practice {
+    padding: 0 0 80px 0;
+}
+.practice__container {
+}
+
+.practice__title {
+    text-align: center;
+    padding: 45px 0;
+}
+@media (min-width:992px) {
+    .practice__title .title__text span{
+        padding: 0 250px;
+    }
+ }
+ 
+ @media (min-width: 671px) and (max-width: 991px) {
+    .practice__title .title__text {
+         padding: 0 70px;
+     }
+ }
+ 
+ @media (min-width: 320px)and (max-width: 670px) {
+   .practice__title .title__text {
+         padding: 0 15px;
+     }
+ }
+
+.practice__body {
+    display: flex;
+    margin: 0 -20px -30px;
+    flex-wrap: wrap;
+}
+.practice__column {
+    flex: 0 1 25%;
+    padding: 0px 20px;
+    margin: 0px 0px 30px 0px;
+}
+
+@media (max-width: 1040px) {
+    .practice__column {
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 630px) {
+    .practice__column {
+        flex: 0 1 100%;
+    }
+}
+.item-practice {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+.item-practice__text-block{
+    padding: 30px;
+    flex: 1 1 auto;
+}
+.item-practice__link{
+    color: inherit;
+}
+.item-practice__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(24/16*100%);
+    letter-spacing: 0.1px;
+    margin-bottom: 15px;
+}
+.item-practice__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(20/14*100%);
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+.item-practice__image{
+    display: block;
+    padding: 0px 0px 60% 0px;
+}
 /*------------------------------------------------------------------------------*/
 /*------------------------------------FOOTER------------------------------------*/
