@@ -569,11 +569,7 @@ h6 {
     padding: 45px 0;
 }
 
-@media (min-width:992px) {
-    .practice__header .title__text span {
-        padding: 0 250px;
-    }
-}
+
 
 @media (min-width: 671px) and (max-width: 991px) {
     .practice__header .title__text {
@@ -626,6 +622,9 @@ h6 {
 .item-practice__link {
     color: inherit;
 }
+.item-practice__link:hover{
+    text-decoration: underline;
+}
 
 .item-practice__title {
     font-size: 16px;
@@ -653,6 +652,7 @@ h6 {
 
 .whoweare {
     background-color: #FFFFFF;
+    
 }
 
 .whoweare__header {
@@ -666,7 +666,7 @@ h6 {
         margin-bottom: 100px;
     }
 }
-@media (min-width:680px) {
+@media (min-width:680px) and (max-width:991px) {
     .whoweare{
         padding: 50px 0;
     }
