@@ -867,18 +867,22 @@ h6 {
 
 
 .subscribe {
-   
+    position: relative;
+	padding: 0px 0px 20px 0px;
 }
-.subscribe::before {
-    content: " ";
-    background-color: #252B42;
-    height: 77px;
-    z-index: 1;
-    max-height: 77px;
-    width: 100%;
-    position: absolute;
-    margin-top: 64px;
+@media (min-width:810px) {
+    .subscribe::before {
+        content: " ";
+        background-color: #252B42;
+        height: 77px;
+        z-index: 1;
+        max-height: 77px;
+        width: 100%;
+        position: absolute;
+        margin-top: 64px;
+    }
 }
+
 
 @media (max-width:468px){
     .subscribe {
@@ -886,24 +890,24 @@ h6 {
         margin: -10px;
     }
 }  
-.subscribe__container{
-    max-width: 986px;
+
+
+.subscribe__body {
     padding: 30px 50px;
     background-color: #17213C;
     margin: 0 auto;
     position: relative;
     z-index: 2;
-} 
- 
-
-.subscribe__body {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-
+@media (max-width:810px){
+    .subscribe__body{
+        margin: -20px;
+    }
+}
 
 .subscribe__title {
     color: #FFFFFF;
@@ -913,7 +917,11 @@ h6 {
     letter-spacing: 0.1px;
     
 }
-
+@media (min-width:810px){
+    .subscribe__title{
+        max-width: 266px;
+    }
+}
 
 .subscribe__form {
     flex: 0 1 45.63%;
@@ -950,7 +958,7 @@ h6 {
     padding: 15px;
 }
 .subscribe__btn{
-    flex: 1 1 26%;
+    flex: 0 1 26%;
     padding: 15px;
     background-color: #FF7B47;
     color: #FFFFFF;
