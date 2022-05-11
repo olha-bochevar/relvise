@@ -218,6 +218,8 @@ h6 {
 
 .page__getintouch {}
 
+.page__contact {}
+
 /*------------------------------------------------------------------------------*/
 /*------------------------------------MAIN-BLOCK--------------------------------*/
 
@@ -982,8 +984,8 @@ h6 {
 
 
 .getintouch {
-    padding: 80px 32.5px;
-    margin-bottom: 68px;
+    padding: 80px 32.5px 148px 32.5px;
+    background-color: #F3F3F3;
 }
 
 
@@ -1012,19 +1014,22 @@ h6 {
 }
 
 @media (max-width:992px) {
-    .getintouch{
+    .getintouch {
         padding: 40px 0;
     }
+
     .getintouch__body {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    .item-getintouch{
+
+    .item-getintouch {
         flex: 0 1 100%;
     }
+
     .getintouch__header {
         margin-bottom: 40px;
     }
-    
+
 }
 
 .item-getintouch>*:not(:last-child) {
@@ -1077,7 +1082,8 @@ h6 {
     width: 160px;
     margin: 0 auto;
 }
-.item-getintouch__button:hover{
+
+.item-getintouch__button:hover {
     color: #FFFFFF;
     background-color: #FF7B47;
 }
@@ -1087,13 +1093,78 @@ h6 {
     color: #FFFFFF;
     padding: 80px 0;
 }
-.item-getintouch_active .item-getintouch__button{
+
+.item-getintouch_active .item-getintouch__button {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
 }
-.item-getintouch_active .item-getintouch__button:hover{
+
+.item-getintouch_active .item-getintouch__button:hover {
     background-color: #FFFFFF;
     color: #252B42;
+}
+
+/*------------------------------------------------------------------------------*/
+/*-----------------------------------CONTACT------------------------------------*/
+
+
+.contact {
+    padding: 40px 0;
+}
+
+.contact__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contact__content>*:not(:last-child) {
+    margin: 0 15px 10px 0;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.1px;
+    color: inherit;
+}
+
+.contact__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+.contact__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    background-color: #FF7B47;
+    padding: 15px 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.contact__button:hover{
+    background-color: #FAFAFA;
+    border: 1px solid #FF7B47;
+    color: #FF7B47;
+}
+@media (max-width:767px) {
+    .contact__body{
+        flex-wrap: wrap;
+    }
+    .contact__button {
+        flex: 1 0 100%;
+        margin-top: 25px;
+    }
+    
 }
 
 /*------------------------------------------------------------------------------*/
