@@ -867,27 +867,33 @@ h6 {
 
 
 .subscribe {
-    max-width: 986px;
-    padding: 30px 50px;
-    background-color: #17213C;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
+   
 }
-/*.subscribe ::before {
+.subscribe::before {
     content: " ";
     background-color: #252B42;
-    width: 1440px;
-    margin: 200px;
+    height: 77px;
     z-index: 1;
     max-height: 77px;
-}*/
+    width: 100%;
+    position: absolute;
+    margin-top: 64px;
+}
+
 @media (max-width:468px){
     .subscribe {
         padding: 20px;
         margin: -10px;
     }
 }  
+.subscribe__container{
+    max-width: 986px;
+    padding: 30px 50px;
+    background-color: #17213C;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+} 
  
 
 .subscribe__body {
